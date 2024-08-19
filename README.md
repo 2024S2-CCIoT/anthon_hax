@@ -9,4 +9,3 @@ Referências
 
 
 - [MQTT-Essentials-A-Lightweight-IoT-Protocol](https://github.com/PacktPublishing/MQTT-Essentials-A-Lightweight-IoT-Protocol)
-
