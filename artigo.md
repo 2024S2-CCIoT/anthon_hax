@@ -15,8 +15,8 @@ modelo de publicação/assinatura, onde:
 
 - mosquitto, hivemq
 
+[<img alt="alt_text" width="40px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt))
 
-<https://www.twilio.com/en-us/blog/what-is-mqtt>
 
 # OPC-UA (OPC Foundation Unified Architecture)
 
