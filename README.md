@@ -1,6 +1,11 @@
 # anthon_hax
 Repositório de Pesquisa
 
+[Artigo](./artigo.md)
+
+[Cronograma](Online%20Gantt%2020240820.png)
+
+
 Referências
 
 - PDF's
@@ -9,3 +14,4 @@ Referências
 
 
 - [MQTT-Essentials-A-Lightweight-IoT-Protocol](https://github.com/PacktPublishing/MQTT-Essentials-A-Lightweight-IoT-Protocol)
+
