@@ -18,6 +18,8 @@ modelo de publicação/assinatura, onde:
 [<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
 
 Um conceito fundamental é Quality of Service (QoS), define o nível de garantia e confiabilidade de entrega de mensagens entre publicador e assinante(s); são de três tipos:  
+
+
     QoS 0 (Entrega Sem Confirmação): O publicador envia a mensagem uma vez ao broker, que não confirma o recebimento ou entrega ao assinante. Isso pode resultar em mensagens perdidas ou duplicadas. O assinante não confirma a recepção da mensagem, o que pode levar a perdas se a conexão for interrompida. Adequado para dados não críticos, como atualizações de estado.
     
     QoS 1 (Entrega Garantida, Mas Não Exatamente Uma Vez): O publicador envia a mensagem ao broker e espera uma confirmação (PUBACK). Se não receber, reenvia a mensagem. O broker, ao enviar a mensagem ao assinante, espera uma confirmação de recebimento (PUBREC) e reenvia se necessário. O assinante confirma o recebimento com um handshake de três etapas (PUBREL, PUBCOMP). Adequado para mensagens importantes que não precisam de entrega exata, como comandos de controle.
