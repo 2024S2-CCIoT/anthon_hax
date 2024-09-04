@@ -24,7 +24,9 @@ Existem diversos padrões de comunicação de dados na indústria, e o que é bu
 
 # Manutenção Preditiva
 
-Manutenção preditiva é a ação de monitorar a condição de um ativo e prever a necessidade de ação preventiva ou corretiva. (GFMAM, 2021)
+Manutenção preditiva é a ação de monitorar a condição de um ativo e prever a necessidade de ação preventiva ou corretiva. (GFMAM, 2021) 
+
+Atualmente , a tecnologia evoluiu de maneira a não apenas detectar falhas mas prever falhas e vida útil restante usando lógica programável e inteligência artificial, recomendando ações corretivas apropriadas.
 
 GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Framework Second Edition. [s.l: s.n.]. Disponível em: <https://gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf?token=blXRtXOZx9Mn0Vw0r15ZEEJDFcPZIWmgywL6TGoFOKc>. Acesso em: 4 set. 2024.
 
@@ -40,17 +42,7 @@ GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Frame
     DetectionManual --> DetectionAuto
     DetectionAuto --> Prediction
     Prediction --> Prescription
-
 ```
-
-‌
-
-Manutenção preditiva baseia-se em um monitoramento e diagnóstico em tempo
-real de equipamentos, processos e cadeias produtivas, com o propósito de agir
-quando estes apresentarem situações que possam resultar em falha, quebra,
-redução de desempenho, diminuição da segurança aos operadores ou afetar o
-controle de qualidade de um produto. 
-
 
 # MQTT ( Message Queuing Telemetry Transport)
 
