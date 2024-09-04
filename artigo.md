@@ -15,6 +15,10 @@ Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a N
     Visualização de dados: Apache Superset, Metabase, Redash, Grafana
     > https://www.ibm.com/products/cognos-analytics
 
+### To do
+    - Encontrar dados mockados de máquinas industriais (MQTT)
+    - Realizar um recorte em indústria
+    - Avaliar maneiras de montar um protótipo de predição
 
 Existem diversos padrões de comunicação de dados na indústria, e o que é buscado principalmente neste tipo de infraestrutura de comunicação é confiabilidade e robustez. Abaixo são explorados alguns protocolos utilizados nesse contexto: MQTT, OPC-UA e Modbus.
 
@@ -24,7 +28,6 @@ modelo de publicação/assinatura, onde:
 
 *Publicadores* (Publisher) enviam mensagens para tópicos específicos.
 *Assinantes* (Subscriber) recebem mensagens de tópicos aos quais estão inscritos.
-
 *Broker* gerencia a comunicação entre publicadores e assinantes
 
 - mosquitto, hivemq
