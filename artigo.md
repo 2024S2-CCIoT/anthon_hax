@@ -6,6 +6,8 @@ Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a N
 ### Ideia de Tema
     Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos;
 
+    > IA + Manutenção https://tractian.com/
+
     Gerenciamento de manutenção e ativos:
     OpenMAINT, Snipe-IT, CMMS.io, Maintenance Assistant
     > exemplo [IBM Maximo: King Khalid International Airport](https://www.ibm.com/blog/the-skys-the-limit-for-airport-maintenance/)
