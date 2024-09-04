@@ -16,11 +16,41 @@ Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a N
     > https://www.ibm.com/products/cognos-analytics
 
 ### To do
-    - Encontrar dados mockados de máquinas industriais (MQTT)
-    - Realizar um recorte em indústria
-    - Avaliar maneiras de montar um protótipo de predição
+    - Encontrar dados mockados de máquinas industriais (MQTT);
+    - Realizar um recorte em indústria;
+    - Avaliar maneiras de montar um protótipo de predição;
 
 Existem diversos padrões de comunicação de dados na indústria, e o que é buscado principalmente neste tipo de infraestrutura de comunicação é confiabilidade e robustez. Abaixo são explorados alguns protocolos utilizados nesse contexto: MQTT, OPC-UA e Modbus.
+
+# Manutenção Preditiva
+
+Manutenção preditiva é a ação de monitorar a condição de um ativo e prever a necessidade de ação preventiva ou corretiva. (GFMAM, 2021)
+
+GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Framework Second Edition. [s.l: s.n.]. Disponível em: <https://gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf?token=blXRtXOZx9Mn0Vw0r15ZEEJDFcPZIWmgywL6TGoFOKc>. Acesso em: 4 set. 2024.
+
+```mermaid
+  flowchart TD
+    Prescription["<b>Prescrição</b><br>• Prescrição da ação necessária<br>• Decisões complexas baseadas em regras<br>• Inteligência Artificial (IA)"]
+    Prediction["<b>Predição</b><br>• Predição de eventos de falha, vida útil restante<br>• Baseada em regras, decisão univariada ou multivariada"]
+    DetectionAuto["<b>Detecção Automática</b><br>• Detecção de falhas em tempo real e coleta de dados de condições<br>via tecnologia online e remota"]
+    DetectionManual["<b>Detecção Manual</b><br>• Detecção de falhas e coleta de dados de condições<br>usando tecnologia portátil"]
+    Reaction["<b>Reação</b><br>• Tecnologia não utilizada/disponível<br>para avaliação de condições"]
+
+    Reaction --> DetectionManual
+    DetectionManual --> DetectionAuto
+    DetectionAuto --> Prediction
+    Prediction --> Prescription
+
+```
+
+‌
+
+Manutenção preditiva baseia-se em um monitoramento e diagnóstico em tempo
+real de equipamentos, processos e cadeias produtivas, com o propósito de agir
+quando estes apresentarem situações que possam resultar em falha, quebra,
+redução de desempenho, diminuição da segurança aos operadores ou afetar o
+controle de qualidade de um produto. 
+
 
 # MQTT ( Message Queuing Telemetry Transport)
 
