@@ -2,6 +2,18 @@ Autor: Anthon Pedrollo Hax
 
 Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a Nuvem; protocolos MQTT, OPC-UA e Modbus e sua integração com computação em nuvem para aplicações industriais.
 
+
+### Ideia de Tema
+    Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos;
+
+    Gerenciamento de manutenção e ativos:
+    OpenMAINT, Snipe-IT, CMMS.io, Maintenance Assistant
+    > exemplo [IBM Maximo: King Khalid International Airport](https://www.ibm.com/blog/the-skys-the-limit-for-airport-maintenance/)
+
+    Visualização de dados: Apache Superset, Metabase, Redash, Grafana
+    > https://www.ibm.com/products/cognos-analytics
+
+
 Existem diversos padrões de comunicação de dados na indústria, e o que é buscado principalmente neste tipo de infraestrutura de comunicação é confiabilidade e robustez. Abaixo são explorados alguns protocolos utilizados nesse contexto: MQTT, OPC-UA e Modbus.
 
 # MQTT ( Message Queuing Telemetry Transport)
