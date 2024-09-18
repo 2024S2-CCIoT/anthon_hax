@@ -4,21 +4,19 @@ Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a N
 
 
 ### Ideia de Tema
-    Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos;
+Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos;
 
-    > IA + Manutenção https://tractian.com/
+> IA + Manutenção https://tractian.com/
 
-    Gerenciamento de manutenção e ativos:
-    OpenMAINT, Snipe-IT, CMMS.io, Maintenance Assistant
-    > exemplo [IBM Maximo: King Khalid International Airport](https://www.ibm.com/blog/the-skys-the-limit-for-airport-maintenance/)
+Gerenciamento de manutenção e ativos:
+OpenMAINT, Snipe-IT, CMMS.io, Maintenance Assistant
+> exemplo [IBM Maximo: King Khalid International Airport](https://www.ibm.com/blog/the-skys-the-limit-for-airport-maintenance/)
 
-    Visualização de dados: Apache Superset, Metabase, Redash, Grafana
-    > https://www.ibm.com/products/cognos-analytics
+Visualização de dados: Apache Superset, Metabase, Redash, Grafana
+> https://www.ibm.com/products/cognos-analytics     
 
 ### To do
-    - Encontrar dados mockados de máquinas industriais (MQTT);
-    - Realizar um recorte em indústria;
-    - Avaliar maneiras de montar um protótipo de predição;
+    - [ ] Encontrar dados mockados de máquinas industriais (MQTT);
 
 Existem diversos padrões de comunicação de dados na indústria, e o que é buscado principalmente neste tipo de infraestrutura de comunicação é confiabilidade e robustez. Abaixo são explorados alguns protocolos utilizados nesse contexto: MQTT, OPC-UA e Modbus.
 
@@ -108,3 +106,7 @@ flowchart TD
     class Processamento processamento;
     class Gerenciamento gerenciamento;
 ```
+
+## Referências
+
+Farias, Pablo. (2024). Mineração 4.0: otimização da manutenção preditiva através da análise de vibração. CONTRIBUCIONES A LAS CIENCIAS SOCIALES. 17. e6690. 10.55905/revconv.17n.5-056. 
