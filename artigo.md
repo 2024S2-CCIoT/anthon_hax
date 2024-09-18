@@ -62,3 +62,49 @@ Utilizando HiveMq é possível montar um broker de MQTT que capta informações 
 
 [<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
 
+
+```mermaid
+flowchart TD
+    subgraph IoT_Sensors["Sensores IoT"]
+        direction TB
+        Sensor1["Sensor de Vibração"]
+    end
+
+    subgraph Protocolos["Protocolos de Comunicação"]
+        direction LR
+        MQTT["MQTT Broker<br>(HiveMQ ou Mosquitto)"]
+    end
+
+    subgraph Processamento["Processamento e Análise"]
+        direction TB
+        DataCollection["Coleta de Dados<br>de Sensores"]
+        MLModel["Modelo de Machine Learning<br>para Predição de Falhas"]
+        AnomalyDetection["Detecção de Anomalias"]
+        Dashboard["Dashboard de Visualização<br>(Grafana, Superset)"]
+    end
+
+    subgraph Gerenciamento["Gerenciamento de Manutenção"]
+        direction TB
+        MaintenanceSystem["Sistema de Manutenção Preditiva<br>(OpenMAINT, IBM Maximo)"]
+        AlertSystem["Sistema de Alerta<br>(Notificações em tempo real)"]
+    end
+
+    %% Fluxos de Dados
+    Sensor1 -->|MQTT| MQTT
+    MQTT --> DataCollection
+
+    DataCollection --> MLModel
+    MLModel --> AnomalyDetection
+    AnomalyDetection --> AlertSystem
+    AnomalyDetection --> Dashboard
+    AlertSystem --> MaintenanceSystem
+
+    %% Legend
+    classDef protocolo fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef processamento fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef gerenciamento fill:#bfb,stroke:#333,stroke-width:2px;
+    
+    class Protocolos protocolo;
+    class Processamento processamento;
+    class Gerenciamento gerenciamento;
+```
