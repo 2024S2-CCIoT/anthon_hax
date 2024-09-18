@@ -44,9 +44,15 @@ GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Frame
     Prediction --> Prescription
 ```
 
-# MQTT ( Message Queuing Telemetry Transport)
+Segundo FARIAS (2024)
+    Com a Internet das Coisas (IoT) e utilização de sensores inteligentes, é possível conectar equipamentos e permitir uma visão global e em tempo real de todas as operações, para tomadas  de decisão mais fundamentadas e planejadas. Ademais, esses sensores permitem ainda a coleta  de dados necessários para o planejamento da manutenção, uma vez que a previsão de falhas é  essencial ao agendamento de intervenções para evitar paralisações não planejadas.
 
-modelo de publicação/assinatura, onde:
+Nesse caso o autor está se referindo a medição via Transformada de Fourier a vibração de máquinas em MegaHertz/segundo dispostos em uma série temporal, que pode indicar anomalias de padrões vibratórios e assim a detecção de problemas mecânicos precocemente.
+
+
+# Protótipo MQTT (Message Queuing Telemetry Transport)
+
+Utilizando HiveMq é possível montar um broker de MQTT que capta informações públicas via assinatura de tópicos, a partir disso é possível construir um modelo de treinamento de Machine Learning capaz de identificar desvios, onde:
 
 *Publicadores* (Publisher) enviam mensagens para tópicos específicos.
 *Assinantes* (Subscriber) recebem mensagens de tópicos aos quais estão inscritos.
@@ -56,40 +62,3 @@ modelo de publicação/assinatura, onde:
 
 [<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
 
-
-# OPC-UA (OPC Foundation Unified Architecture)
-
-# <https://github.com/OPCFoundation>
-
-Plataforma independente: OPC-UA pode ser implementado em diferentes sistemas operacionais e hardware, garantindo interoperabilidade entre dispositivos de diferentes fabricantes.
-
-Segurança: O protocolo oferece funcionalidades avançadas de segurança, incluindo autenticação, criptografia e controle de acesso, garantindo que as comunicações sejam seguras.
-
-Modelo de informação rico: OPC-UA suporta uma estrutura de dados complexa, permitindo a modelagem de informações detalhadas sobre os dispositivos e processos, o que facilita a integração de sistemas.
-
-Comunicação escalável: OPC-UA pode ser usado em vários níveis de uma infraestrutura industrial, desde sensores e controladores até sistemas de gerenciamento e supervisão, oferecendo uma solução de comunicação escalável.
-
-Suporte para várias plataformas e linguagens: O protocolo é amplamente adotado em sistemas de automação e está disponível em diversas linguagens de programação, facilitando a integração em diferentes ambientes de desenvolvimento.
-
-
-# Modbus
-
-- Estrutura Master / Slave (nome péssimo, diz respeito a uso de memória de processamentos de terceiros)
-
-Protocolos de Transmissão:
-
- RTU: Usa comunicação serial (RS-232, RS-485) e é o formato mais comum, empregando uma estrutura de dados compacta e eficiente.
-
-
- ASCII: Similar ao Modbus RTU, mas usa uma representação de dados ASCII, que é mais fácil de ler, mas menos eficiente.
-
-
- TCP/IP: Adaptado para redes Ethernet, permitindo que o Modbus seja usado em redes modernas de TI, além das tradicionais conexões seriais.
-
-- padrões físicos RS-232 (Recommended Standard 232), RS-485 (Recommended Standard 485), EIA-485 (Electronic Industries Alliance-485) e Ethernet TCP/IP.
-
-Conexão ponto-a-ponto de velocidade média de 115 Kbps ou taxas um pouco maiores.
-
-A distância máxima entre os dispositivos da rede está em torno de 30m.
-
-<https://embarcados.com.br/protocolo-modbus/>
