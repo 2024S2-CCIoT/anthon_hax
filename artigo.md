@@ -58,13 +58,21 @@ Utilizando HiveMq é possível montar um broker de MQTT que capta informações 
 > *Assinantes* (Subscriber) recebem mensagens de tópicos aos quais estão inscritos.
 > *Broker* gerencia a comunicação entre publicadores e assinantes.
 
+![Transformada de Fourier](image.png)
+Fonte: FARIAS (2024)
+
+Segundo FARIAS (2024)
+    Ao analisar o espectro da frequência, os picos demonstram problemas específicos de cada
+    componente, ou seja, cada problema induz um padrão de vibração em frequências diferentes.
+    Cada pico de frequência indica uma origem de problema diversa e, com isso, ao identificar o problema específico, a equipe de manutenção poderá atuar de forma proativa, de acordo com o planejamento correto, sem necessidade de paradas não programadas.   
+
 Abaixo está um diagrama com a ideia de prototipação:
 
 ```mermaid
 flowchart TD
     subgraph IoT_Sensors["Sensores IoT"]
         direction TB
-        Sensor1["Sensor de Vibração"]
+        Sensor1["Sensor de Vibração (dados mockados)"]
     end
 
     subgraph Protocolos["Protocolos de Comunicação"]
@@ -82,7 +90,7 @@ flowchart TD
 
     subgraph Gerenciamento["Gerenciamento de Manutenção"]
         direction TB
-        MaintenanceSystem["Sistema de Manutenção Preditiva<br>(OpenMAINT, IBM Maximo)"]
+        MaintenanceSystem["Sistema de Manutenção Preditiva<br>(OpenMAINT)"]
         AlertSystem["Sistema de Alerta<br>(Notificações em tempo real)"]
     end
 
