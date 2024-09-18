@@ -1,10 +1,12 @@
 Autor: Anthon Pedrollo Hax
 
-Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a Nuvem; protocolos MQTT, OPC-UA e Modbus e sua integração com computação em nuvem para aplicações industriais.
+    Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a Nuvem; protocolos MQTT, OPC-UA e Modbus e sua integração com computação em nuvem para aplicações industriais.
 
 
 ### Ideia de Tema
-Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos;
+Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos via MQTT;
+
+[<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
 
 > IA + Manutenção https://tractian.com/
 
@@ -52,14 +54,11 @@ Nesse caso o autor está se referindo a medição via Transformada de Fourier a 
 
 Utilizando HiveMq é possível montar um broker de MQTT que capta informações públicas via assinatura de tópicos, a partir disso é possível construir um modelo de treinamento de Machine Learning capaz de identificar desvios, onde:
 
-*Publicadores* (Publisher) enviam mensagens para tópicos específicos.
-*Assinantes* (Subscriber) recebem mensagens de tópicos aos quais estão inscritos.
-*Broker* gerencia a comunicação entre publicadores e assinantes
+> *Publicadores* (Publisher) enviam mensagens para tópicos específicos.
+> *Assinantes* (Subscriber) recebem mensagens de tópicos aos quais estão inscritos.
+> *Broker* gerencia a comunicação entre publicadores e assinantes.
 
-- mosquitto, hivemq
-
-[<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
-
+Abaixo está um diagrama com a ideia de prototipação:
 
 ```mermaid
 flowchart TD
