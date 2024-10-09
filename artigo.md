@@ -3,11 +3,18 @@ Autor: Anthon Pedrollo Hax
     Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a Nuvem; protocolos MQTT, OPC-UA e Modbus e sua integração com computação em nuvem para aplicações industriais.
 
 
-### Ideia de Tema
+### MQTT
 Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos via MQTT;
 
-[<img alt="MQTT" width="600px" src="MQTT_Diagram.png" />](https://www.twilio.com/en-us/blog/what-is-mqtt)
+Segundo GOEBEL (2024), Estima-se que o número de dispositivos IoT conectados tenha aumentado 18%, alcançando 14,4 bilhões globalmente até o final de 2022, com projeções indicando cerca de 27 bilhões de dispositivos até 2025. O protocolo MQTT (Message Queuing Telemetry Transport) se destaca como um padrão amplamente adotado para comunicação IoT e M2M. Desenvolvido inicialmente para atender à necessidade de comunicação eficiente entre dispositivos remotos com largura de banda limitada e recursos de processamento restritos, o MQTT utiliza um modelo de transporte de mensagens de publicação/assinatura. 
 
+
+MQTT permite que dispositivos publiquem mensagens em tópicos específicos, com todos os dispositivos assinantes recebendo as mensagens publicadas. A simplicidade e a leveza do MQTT o tornam ideal para uma variedade de aplicações em setores como automotivo, manufatura e telecomunicações. A arquitetura do MQTT é composta por dois elementos principais: clientes e brokers. Os clientes são dispositivos ou aplicativos que podem publicar ou assinar mensagens, enquanto os brokers atuam como servidores intermediários, roteando mensagens entre os clientes. Os brokers gerenciam a distribuição das mensagens, mantendo o controle sobre as assinaturas e garantindo que as mensagens sejam entregues de forma eficiente. 
+
+
+O MQTT se revela particularmente útil em diversas aplicações IoT e IIoT (Internet Industrial das Coisas), coletando dados de sensores em ambientes remotos e para monitorar a saúde de máquinas, garantindo a entrega confiável de dados críticos antes mesmo de chegarem a um centro de dados. Implementações de brokers MQTT estão disponíveis em plataformas como HiveMQ, Mosquitto e serviços de nuvem como AWS IoT e Azure IoT.
+
+### Uso de Machine Learning em Manutenção
 > IA + Manutenção https://tractian.com/
 
 Gerenciamento de manutenção e ativos:
@@ -115,5 +122,8 @@ flowchart TD
 ```
 
 ## Referências
+
+GOEBEL, T. What Is MQTT? Disponível em: <https://www.twilio.com/en-us/blog/what-is-mqtt>. 2024.
+
 
 Farias, Pablo. (2024). Mineração 4.0: otimização da manutenção preditiva através da análise de vibração. CONTRIBUCIONES A LAS CIENCIAS SOCIALES. 17. e6690. 10.55905/revconv.17n.5-056. 
