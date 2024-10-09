@@ -113,6 +113,9 @@ flowchart TD
 
 ### Ferramentas utilizadas:
 
+> Broker + public data
+![mqtt-configuration](image-1.png)
+
 Visualização de dados: Apache Superset, Metabase, Redash, Grafana
 > https://www.ibm.com/products/cognos-analytics     
 
