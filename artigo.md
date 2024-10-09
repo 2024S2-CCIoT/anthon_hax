@@ -17,25 +17,15 @@ O MQTT se revela particularmente útil em diversas aplicações IoT e IIoT (Inte
 ### Uso de Machine Learning em Manutenção
 > IA + Manutenção https://tractian.com/
 
-Gerenciamento de manutenção e ativos:
-OpenMAINT, Snipe-IT, CMMS.io, Maintenance Assistant
-> exemplo [IBM Maximo: King Khalid International Airport](https://www.ibm.com/blog/the-skys-the-limit-for-airport-maintenance/)
-
-Visualização de dados: Apache Superset, Metabase, Redash, Grafana
-> https://www.ibm.com/products/cognos-analytics     
-
-### To do
-    - [ ] Encontrar dados mockados de máquinas industriais (MQTT);
-
-Existem diversos padrões de comunicação de dados na indústria, e o que é buscado principalmente neste tipo de infraestrutura de comunicação é confiabilidade e robustez. Abaixo são explorados alguns protocolos utilizados nesse contexto: MQTT, OPC-UA e Modbus.
-
-# Manutenção Preditiva
-
 Manutenção preditiva é a ação de monitorar a condição de um ativo e prever a necessidade de ação preventiva ou corretiva. (GFMAM, 2021) 
 
-Atualmente , a tecnologia evoluiu de maneira a não apenas detectar falhas mas prever falhas e vida útil restante usando lógica programável e inteligência artificial, recomendando ações corretivas apropriadas.
+Atualmente , a tecnologia evoluiu de maneira a não apenas detectar falhas mas prever falhas e vida útil restante usando lógica programável e inteligência artificial, recomendando ações corretivas apropriadas. Segundo KANE et al. (2022), Manutenção Preditiva (PdM) é uma abordagem inovadora que utiliza técnicas baseadas em dados para gerenciar eficientemente os planos de manutenção de ativos, prevendo falhas antes que ocorram. Na indústria, a coleta contínua de dados sobre o estado dos equipamentos permite identificar padrões e correlações que podem prever e, portanto, prevenir falhas. Se utilizada corretamente pode reduzir o custo de inatividade e melhorar a disponibilidade dos equipamentos.
 
-GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Framework Second Edition. [s.l: s.n.]. Disponível em: <https://gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf?token=blXRtXOZx9Mn0Vw0r15ZEEJDFcPZIWmgywL6TGoFOKc>. Acesso em: 4 set. 2024.
+Segundo KANE et al. (2022) a análise da inatividade de máquinas é crucial, pois pode representar uma perda de 5% a 20% na produtividade das indústrias, além de gerar custos exorbitantes com manutenção. As técnicas de aprendizado de máquina (ML) são ferramentas valiosas para examinar dados históricos, identificar padrões de degradação e prever falhas potenciais. 
+
+Em seu estudo, KANE et al. (2022) propõe a utilização de dados coletados por sensores de uma máquina de tubulação, com o objetivo de realizar uma limpeza de dados e identificar correlações entre parâmetros que afetam a operação da máquina. A partir da análise desses dados, o trabalho busca identificar e treinar o modelo de aprendizado de máquina mais adequado para prever falhas. A coleta contínua de dados por sensores permite um agendamento de manutenção mais adequado, reduzindo o tempo de inatividade e os custos associados. A eficácia do modelo foi demonstrada na previsão de períodos de parada com base em dados históricos, destacando sua importância na manutenção da produtividade e na minimização dos custos operacionais.
+
+O uso de modelos de aprendizado de máquina, como redes neurais do tipo LSTM (Long Short-Term Memory), tem se mostrado eficaz na previsão de falhas, uma vez que esses modelos podem processar sequências de dados e aprender padrões complexos ao longo do tempo. A capacidade dos LSTMs de manter informações por períodos prolongados os torna especialmente úteis na identificação de falhas antes que elas causem paradas.
 
 ```mermaid
   flowchart TD
@@ -121,9 +111,18 @@ flowchart TD
     class Gerenciamento gerenciamento;
 ```
 
+### Ferramentas utilizadas:
+
+Visualização de dados: Apache Superset, Metabase, Redash, Grafana
+> https://www.ibm.com/products/cognos-analytics     
+
+
 ## Referências
 
 GOEBEL, T. What Is MQTT? Disponível em: <https://www.twilio.com/en-us/blog/what-is-mqtt>. 2024.
 
+KANE, Archit et al. (2022). Predictive Maintenance using Machine Learning. 10.48550/arXiv.2205.09402. 
+
+GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Framework Second Edition. [s.l: s.n.]. Disponível em: <https://gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf?token=blXRtXOZx9Mn0Vw0r15ZEEJDFcPZIWmgywL6TGoFOKc>. Acesso em: 4 set. 2024.
 
 Farias, Pablo. (2024). Mineração 4.0: otimização da manutenção preditiva através da análise de vibração. CONTRIBUCIONES A LAS CIENCIAS SOCIALES. 17. e6690. 10.55905/revconv.17n.5-056. 
