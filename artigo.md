@@ -136,3 +136,7 @@ https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-c
 https://www.hivemq.com/blog/mqtt-sn-smart-choice-for-iiot/
 
 https://www.emqx.com/en/blog/the-smart-manufacturing-revolution
+
+
+# Public Broker Alternatives
+https://www.cloudamqp.com/
