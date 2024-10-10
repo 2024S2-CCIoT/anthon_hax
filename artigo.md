@@ -114,6 +114,9 @@ flowchart TD
 ### Ferramentas utilizadas:
 
 > Broker + public data
+
+Cluster Serveless HiveMQ Cloud (TLS) + Kafka
+
 ![mqtt-configuration](image-1.png)
 
 Visualização de dados: Apache Superset, Metabase, Redash, Grafana
