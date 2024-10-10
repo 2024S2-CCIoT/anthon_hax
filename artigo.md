@@ -2,7 +2,6 @@ Autor: Anthon Pedrollo Hax
 
     Tópico 7: Protocolos de Comunicação IoT Industrial e sua integração com a Nuvem; protocolos MQTT, OPC-UA e Modbus e sua integração com computação em nuvem para aplicações industriais.
 
-
 ### MQTT
 Utilização Iot para Manutenção Preditiva, isso é, utilizar IA e sensores para poder prever falhas em equipamentos via MQTT;
 
@@ -41,8 +40,7 @@ O uso de modelos de aprendizado de máquina, como redes neurais do tipo LSTM (Lo
     Prediction --> Prescription
 ```
 
-Segundo FARIAS (2024)
-    Com a Internet das Coisas (IoT) e utilização de sensores inteligentes, é possível conectar equipamentos e permitir uma visão global e em tempo real de todas as operações, para tomadas  de decisão mais fundamentadas e planejadas. Ademais, esses sensores permitem ainda a coleta  de dados necessários para o planejamento da manutenção, uma vez que a previsão de falhas é  essencial ao agendamento de intervenções para evitar paralisações não planejadas.
+Segundo FARIAS (2024) com a Internet das Coisas (IoT) e utilização de sensores inteligentes, é possível conectar equipamentos e permitir uma visão global e em tempo real de todas as operações, para tomadas  de decisão mais fundamentadas e planejadas. Ademais, esses sensores permitem ainda a coleta  de dados necessários para o planejamento da manutenção, uma vez que a previsão de falhas é  essencial ao agendamento de intervenções para evitar paralisações não planejadas.
 
 Nesse caso o autor está se referindo a medição via Transformada de Fourier a vibração de máquinas em MegaHertz/segundo dispostos em uma série temporal, que pode indicar anomalias de padrões vibratórios e assim a detecção de problemas mecânicos precocemente.
 
@@ -58,10 +56,7 @@ Utilizando HiveMq é possível montar um broker de MQTT que capta informações 
 ![Transformada de Fourier](image.png)
 Fonte: FARIAS (2024)
 
-Segundo FARIAS (2024)
-    Ao analisar o espectro da frequência, os picos demonstram problemas específicos de cada
-    componente, ou seja, cada problema induz um padrão de vibração em frequências diferentes.
-    Cada pico de frequência indica uma origem de problema diversa e, com isso, ao identificar o problema específico, a equipe de manutenção poderá atuar de forma proativa, de acordo com o planejamento correto, sem necessidade de paradas não programadas.   
+Segundo FARIAS (2024), ao analisar o espectro da frequência, os picos demonstram problemas específicos de cada componente, ou seja, cada problema induz um padrão de vibração em frequências diferentes. Cada pico de frequência indica uma origem de problema diversa e, com isso, ao identificar o problema específico, a equipe de manutenção poderá atuar de forma proativa, de acordo com o planejamento correto, sem necessidade de paradas não programadas.   
 
 Abaixo está um diagrama com a ideia de prototipação:
 
@@ -132,3 +127,12 @@ KANE, Archit et al. (2022). Predictive Maintenance using Machine Learning. 10.48
 GFMAM -  Global Forum on Maintenance and Asset Management. The Maintenance Framework Second Edition. [s.l: s.n.]. Disponível em: <https://gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf?token=blXRtXOZx9Mn0Vw0r15ZEEJDFcPZIWmgywL6TGoFOKc>. Acesso em: 4 set. 2024.
 
 Farias, Pablo. (2024). Mineração 4.0: otimização da manutenção preditiva através da análise de vibração. CONTRIBUCIONES A LAS CIENCIAS SOCIALES. 17. e6690. 10.55905/revconv.17n.5-056. 
+
+
+# IIOT
+
+https://www.emqx.com/en/blog/iiot-explained-examples-technologies-benefits-and-challenges
+
+https://www.hivemq.com/blog/mqtt-sn-smart-choice-for-iiot/
+
+https://www.emqx.com/en/blog/the-smart-manufacturing-revolution
