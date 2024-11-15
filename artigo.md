@@ -67,27 +67,22 @@ Abaixo está um diagrama com a ideia de prototipação:
 flowchart TD
     subgraph IoT_Sensors["Sensores IoT"]
         direction TB
-        Sensor1["Sensor de Vibração (dados mockados)"]
+        Sensor1["wokwi-mpu6050"]
     end
-
-    subgraph Protocolos["Protocolos de Comunicação"]
+    
         direction LR
-        MQTT["MQTT Broker<br>(HiveMQ ou Mosquitto)"]
-    end
+        MQTT["HiveMQ Broker"]
 
     subgraph Processamento["Processamento e Análise"]
-        direction TB
-        DataCollection["Coleta de Dados<br>de Sensores"]
-        MLModel["Modelo de Machine Learning<br>para Predição de Falhas"]
+        direction LR
+        MLModel["Modelo Long short-Term Memory (LSTM)"]
         AnomalyDetection["Detecção de Anomalias"]
     end
 
 
     %% Fluxos de Dados
     Sensor1 -->|MQTT| MQTT
-    MQTT --> DataCollection
-
-    DataCollection --> MLModel
+    MQTT --> MLModel
     MLModel --> AnomalyDetection
 
 
@@ -99,7 +94,6 @@ flowchart TD
     class Protocolos protocolo;
     class Processamento processamento;
     class Gerenciamento gerenciamento;
-
 ```
 
 ### Ferramentas utilizadas:
