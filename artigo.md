@@ -80,14 +80,8 @@ flowchart TD
         DataCollection["Coleta de Dados<br>de Sensores"]
         MLModel["Modelo de Machine Learning<br>para Predição de Falhas"]
         AnomalyDetection["Detecção de Anomalias"]
-        Dashboard["Dashboard de Visualização<br>(Grafana, Superset)"]
     end
 
-    subgraph Gerenciamento["Gerenciamento de Manutenção"]
-        direction TB
-        MaintenanceSystem["Sistema de Manutenção Preditiva<br>(OpenMAINT)"]
-        AlertSystem["Sistema de Alerta<br>(Notificações em tempo real)"]
-    end
 
     %% Fluxos de Dados
     Sensor1 -->|MQTT| MQTT
@@ -95,9 +89,7 @@ flowchart TD
 
     DataCollection --> MLModel
     MLModel --> AnomalyDetection
-    AnomalyDetection --> AlertSystem
-    AnomalyDetection --> Dashboard
-    AlertSystem --> MaintenanceSystem
+
 
     %% Legend
     classDef protocolo fill:#f9f,stroke:#333,stroke-width:2px;
@@ -107,6 +99,7 @@ flowchart TD
     class Protocolos protocolo;
     class Processamento processamento;
     class Gerenciamento gerenciamento;
+
 ```
 
 ### Ferramentas utilizadas:
