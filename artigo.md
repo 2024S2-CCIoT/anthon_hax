@@ -90,7 +90,7 @@ flowchart TD
 
     %% Legend
     classDef protocolo fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef processamento fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef processamento fill:#fff,stroke:#333,stroke-width:2px;
     classDef gerenciamento fill:#bfb,stroke:#333,stroke-width:2px;
     
     class Protocolos protocolo;
