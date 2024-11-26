@@ -67,16 +67,17 @@ Abaixo está um diagrama com a ideia de prototipação:
 flowchart TD
     subgraph IoT_Sensors["Sensores IoT"]
         direction TB
-        Sensor1["wokwi-mpu6050"]
+        Sensor1["wokwi-mpu6050: Aceleração e Temperatura"]
     end
     
         direction LR
-        MQTT["HiveMQ Broker"]
+        MQTT["Mosquitto Broker"]
 
     subgraph Processamento["Processamento e Análise"]
         direction LR
+        Colab["Colab Google: consolidação de dados"]
         MLModel["Modelo Long short-Term Memory (LSTM)"]
-        AnomalyDetection["Detecção de Anomalias"]
+        Data["InfluxDB"]
     end
 
 
