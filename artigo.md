@@ -77,8 +77,9 @@ flowchart TD
         direction LR
         Colab["Colab Google: consolidação de dados"]
         MLModel["Modelo Long short-Term Memory (LSTM)"]
-        Data["InfluxDB"]
     end
+        direction LR
+        Data["InfluxDB"]
 
 
     %% Fluxos de Dados
