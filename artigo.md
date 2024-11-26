@@ -73,9 +73,8 @@ flowchart TD
         direction LR
         MQTT["Mosquitto Broker"]
 
-    subgraph Processamento["Processamento e Análise"]
+    subgraph Processamento["Colab Google"]
         direction LR
-        Colab["Colab Google: consolidação de dados"]
         MLModel["Modelo LSTM"]
     end
         direction LR
