@@ -84,7 +84,7 @@ flowchart TD
     %% Fluxos de Dados
     Sensor1 -->|MQTT| MQTT
     MQTT --> MLModel
-    MLModel --> AnomalyDetection
+    MLModel --> Data
 
 
     %% Legend
