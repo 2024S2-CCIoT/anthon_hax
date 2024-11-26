@@ -67,7 +67,7 @@ Abaixo está um diagrama com a ideia de prototipação:
 flowchart TD
     subgraph IoT_Sensors["Sensores IoT"]
         direction TB
-        Sensor1["wokwi-mpu6050: Aceleração e Temperatura"]
+        Sensor1["wokwi-mpu6050"]
     end
     
         direction LR
