@@ -76,7 +76,7 @@ flowchart TD
     subgraph Processamento["Processamento e Análise"]
         direction LR
         Colab["Colab Google: consolidação de dados"]
-        MLModel["Modelo Long short-Term Memory (LSTM)"]
+        MLModel["Modelo LSTM"]
     end
         direction LR
         Data["InfluxDB"]
